@@ -7,6 +7,9 @@ tailwind.config = {
                 // pointer: 'url(/img/cursor/pointer.png), pointer',
             },
         },
+        fontFamily: {
+            'montserrat': ['Montserrat'],
+        }
     },
 }
 
