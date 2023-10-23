@@ -3,16 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.2/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
     <script src="main.js" defer></script>
-    <title>Ecole G4</title>
+    <title>Accueil</title>
   </head>
-  <body class="bg-[#180537] font-montserrat">
+  <body class="bg-[#180537] font-montserrat cursor-default">
     <div
       id="separator_header_content_footer"
       class="flex flex-col overflow-hidden"
@@ -40,7 +38,7 @@
           class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6"
         >
           <li>
-            <a class="text-sm text-white hover:text-gray-500" href="#"
+            <a class="text-sm text-white hover:text-gray-500" href="/calendar.html"
               >Calendrier</a
             >
           </li>
@@ -106,7 +104,7 @@
               <li class="mb-1">
                 <a
                   class="w-full flex items-center justify-between p-4 text-lg font-semibold text-white rounded"
-                  href="#"
+                  href="/calendar.html"
                 >
                   <div>Calendrier</div>
                   <svg
@@ -319,42 +317,28 @@
       </div>
       <!-- Fin header -->
 
+      
       <main class="pt-24 flex flex-col text-white justify-around lg:px-[10rem]">
-        <div class="pt-4">
-          <img
-            src="img/team.png"
-            class="w-full object-none h-[20rem]"
-            alt="Ecole G4"
-          />
-        </div>
-        <div
-          id="desc"
-          class="h-fit p-[0.8rem] bg-amber-50 bg-opacity-20 rounded-b-3xl border-b-2 border-x-2 border-zinc-400 backdrop-blur-lg shrink-0"
-        >
-          <h3 class="text-4xl pb-3">Qui sommes-nous ?</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae
-            consectetur nihil quidem illum corrupti veritatis ipsam eos
-            laudantium, minus ullam, quam magni repudiandae laborum aliquam
-            officia nemo commodi ex iure!
-          </p>
-          <a
-            target="_blank"
-            class="block text-sm font-semibold text-[#98BBF4] hover:underline w-fit"
-            href="https://www.institut-g4.fr/lyon/"
-            >En savoir plus</a
-          >
-        </div>
-        <iframe
-          class="w-full px-[0.8rem] py-[0.8rem]"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d811.6055960534436!2d4.798067286235362!3d45.77167653383123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4ea96c16ba51f%3A0x504f5fbc80d6d324!2sInstitut%20G4!5e0!3m2!1sfr!2sfr!4v1697024679837!5m2!1sfr!2sfr"
-          width="800"
-          height="600"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
+        <form id="contact-form" method="POST" action="sendmail.php">
+            <div class="form-row form-error" style="display:none;"></div>
+            <div class="form-row">
+              <label for="contact-form-name">Name:</label>
+              <input id="contact-form-name" class="form-input" type="text" name="name" required>
+            </div>
+            <div class="form-row">
+              <label for="contact-form-email">Email:</label>
+              <input id="contact-form-email" class="form-input" type="email" name="email" required>
+            </div>
+            <div class="form-row">
+              <label for="contact-form-phone">Phone:</label>
+              <input id="contact-form-phone" class="form-input" type="tel" name="phone">
+            </div>
+            <div class="form-row">
+              <label for="contact-form-message">Message:</label>
+              <textarea id="contact-form-message" class="form-input" name="message" required></textarea>
+            </div>
+            <button type="submit">Submit</button>
+          </form>
       </main>
 
       <!-- Footer -->
