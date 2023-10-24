@@ -3,9 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.2/dist/full.css" rel="stylesheet" type="text/css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.9.2/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <script src="main.js" defer></script>
     <title>Accueil</title>
@@ -38,7 +46,9 @@
           class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6"
         >
           <li>
-            <a class="text-sm text-white hover:text-gray-500" href="/calendar.html"
+            <a
+              class="text-sm text-white hover:text-gray-500"
+              href="/calendar.html"
               >Calendrier</a
             >
           </li>
@@ -294,22 +304,50 @@
               <p>00.00.00.00.00</p>
             </div>
             <div class="flex justify-start gap-6 items-center">
-              <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M5.6665 7.08333C4.89057 7.08333 4.24984 7.72407 4.24984 8.5V25.5C4.24984 26.2759 4.89057 26.9167 5.6665 26.9167H28.3332C29.1091 26.9167 29.7498 26.2759 29.7498 25.5V8.5C29.7498 7.72407 29.1091 7.08333 28.3332 7.08333H5.6665ZM1.4165 8.5C1.4165 6.15926 3.32577 4.25 5.6665 4.25H28.3332C30.6739 4.25 32.5832 6.15926 32.5832 8.5V25.5C32.5832 27.8407 30.6739 29.75 28.3332 29.75H5.6665C3.32577 29.75 1.4165 27.8407 1.4165 25.5V8.5Z" fill="white"/>
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M1.67271 7.68764C2.12139 7.04667 3.00473 6.89078 3.6457 7.33946L17 16.6874L30.3542 7.33946C30.9952 6.89078 31.8785 7.04667 32.3272 7.68764C32.7759 8.32861 32.62 9.21194 31.979 9.66062L17.8124 19.5773C17.3246 19.9187 16.6753 19.9187 16.1876 19.5773L2.02089 9.66062C1.37992 9.21194 1.22403 8.32861 1.67271 7.68764Z" fill="white"/>
-                </svg>
-                
+              <svg
+                width="34"
+                height="34"
+                viewBox="0 0 34 34"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M5.6665 7.08333C4.89057 7.08333 4.24984 7.72407 4.24984 8.5V25.5C4.24984 26.2759 4.89057 26.9167 5.6665 26.9167H28.3332C29.1091 26.9167 29.7498 26.2759 29.7498 25.5V8.5C29.7498 7.72407 29.1091 7.08333 28.3332 7.08333H5.6665ZM1.4165 8.5C1.4165 6.15926 3.32577 4.25 5.6665 4.25H28.3332C30.6739 4.25 32.5832 6.15926 32.5832 8.5V25.5C32.5832 27.8407 30.6739 29.75 28.3332 29.75H5.6665C3.32577 29.75 1.4165 27.8407 1.4165 25.5V8.5Z"
+                  fill="white"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M1.67271 7.68764C2.12139 7.04667 3.00473 6.89078 3.6457 7.33946L17 16.6874L30.3542 7.33946C30.9952 6.89078 31.8785 7.04667 32.3272 7.68764C32.7759 8.32861 32.62 9.21194 31.979 9.66062L17.8124 19.5773C17.3246 19.9187 16.6753 19.9187 16.1876 19.5773L2.02089 9.66062C1.37992 9.21194 1.22403 8.32861 1.67271 7.68764Z"
+                  fill="white"
+                />
+              </svg>
+
               <p>BDE@gmail.com</p>
             </div>
             <div class="flex justify-around items-center">
               <a href="#">
-                <img class="max-h-12" src="/img/social/logo-facebook.png" alt="Logo facebook" />
+                <img
+                  class="max-h-12"
+                  src="/img/social/logo-facebook.png"
+                  alt="Logo facebook"
+                />
               </a>
               <a href="#">
-                <img class="max-h-12" src="img/social/logo-instagram.png" alt="Logo instagram" />
+                <img
+                  class="max-h-12"
+                  src="img/social/logo-instagram.png"
+                  alt="Logo instagram"
+                />
               </a>
               <a href="#">
-                <img class="max-h-12" src="/img/social/logo-x.png" alt="Logo X" />
+                <img
+                  class="max-h-12"
+                  src="/img/social/logo-x.png"
+                  alt="Logo X"
+                />
               </a>
             </div>
           </div>
@@ -317,28 +355,123 @@
       </div>
       <!-- Fin header -->
 
-      
-      <main class="pt-24 flex flex-col text-white justify-around lg:px-[10rem]">
-        <form id="contact-form" method="POST" action="sendmail.php">
-            <div class="form-row form-error" style="display:none;"></div>
-            <div class="form-row">
-              <label for="contact-form-name">Name:</label>
-              <input id="contact-form-name" class="form-input" type="text" name="name" required>
+      <main
+        class="pt-24 flex text-white justify-between lg:px-[10rem] flex-col lg:flex-row"
+      >
+        <div
+          class="grid md:grid-cols-2 gap-12 lg:p-16 grid-cols-1 items-center"
+        >
+          <div
+            class="flex flex-col items-center justify-between max-w-[500px] p-6 gap-9 bg-[#fffcef]/20 backdrop-blur-[10px] border-2 border-[#aeaeae]/30 rounded-[20px]"
+          >
+            <img src="" alt="Logo Mail" />
+            <a class="text-2xl" href="mailto:bde@gmail.com"
+              >Email : bde@gmail.com</a
+            >
+            <p class="text-lg text-justify">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse nascetur lacus, adipiscing viverra turpis vitae velit.
+              Bibendum maecenas elit interdum enim amet ut ullamcorper potenti.
+              Vitae nisl purus in bibendum.
+            </p>
+          </div>
+          <div
+            class="flex flex-col items-center justify-between max-w-[500px] p-6 gap-9 bg-[#fffcef]/20 backdrop-blur-[10px] border-2 border-[#aeaeae]/30 rounded-[20px]"
+          >
+            <p class="text-2xl">Nos réseaux</p>
+            <img src="/img/social/logo-x.png" class="max-h-20" alt="Logo X" />
+            <div class="flex items-center justify-around w-full">
+              <img
+                src="/img/social/logo-facebook.png"
+                class="max-h-20"
+                alt="Logo Facebook"
+              />
+              <img
+                src="/img/social/logo-instagram.png"
+                class="max-h-20"
+                alt="Logo Instagram"
+              />
             </div>
-            <div class="form-row">
-              <label for="contact-form-email">Email:</label>
-              <input id="contact-form-email" class="form-input" type="email" name="email" required>
-            </div>
-            <div class="form-row">
-              <label for="contact-form-phone">Phone:</label>
-              <input id="contact-form-phone" class="form-input" type="tel" name="phone">
-            </div>
-            <div class="form-row">
-              <label for="contact-form-message">Message:</label>
-              <textarea id="contact-form-message" class="form-input" name="message" required></textarea>
-            </div>
-            <button type="submit">Submit</button>
-          </form>
+          </div>
+          <div
+            class="flex flex-col items-center justify-between max-w-[500px] p-6 gap-9 bg-[#fffcef]/20 backdrop-blur-[10px] border-2 border-[#aeaeae]/30 rounded-[20px]"
+          >
+            <img src="" alt="Map icon" />
+            <p class="text-2xl">Localisation : Lyon (69)</p>
+            <p class="text-lg text-justify">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse nascetur lacus, adipiscing viverra turpis vitae velit.
+              Bibendum maecenas elit interdum enim amet ut ullamcorper potenti.
+              Vitae nisl purus in bibendum.
+            </p>
+          </div>
+          <div
+            class="flex flex-col items-center justify-between max-w-[500px] p-6 gap-9 bg-[#fffcef]/20 backdrop-blur-[10px] border-2 border-[#aeaeae]/30 rounded-[20px]"
+          >
+            <img src="" alt="Phone icon" />
+            <p class="text-2xl">Numéro : 00 00 00 00 00</p>
+            <p class="text-lg text-justify">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse nascetur lacus, adipiscing viverra turpis vitae velit.
+              Bibendum maecenas elit interdum enim amet ut ullamcorper potenti.
+              Vitae nisl purus in bibendum.
+            </p>
+          </div>
+        </div>
+        <section
+          class="bg-[#fffcef]/20 backdrop-blur-[10px] border-2 border-[#aeaeae]/30 rounded-[20px] my-16 lg:min-w-[600px]"
+        >
+          <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+            <h2
+              class="mb-4 text-4xl tracking-tight font-extrabold text-start text-gray-900 dark:text-white"
+            >
+              Nous écrire :
+            </h2>
+            <form action="#" class="space-y-8">
+              <div>
+                <input
+                  type="name"
+                  id="name"
+                  class="shadow-sm border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 bg-white dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                  placeholder="Prénom et nom"
+                  required
+                />
+              </div>
+              <div>
+                <input
+                  type="email"
+                  id="email"
+                  class="shadow-sm border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 bg-white dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                  placeholder="E-mail"
+                  required
+                />
+              </div>
+              <div>
+                <input
+                  type="text"
+                  id="subject"
+                  class="block p-3 w-full text-sm text-gray-900 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 bg-white dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                  placeholder="Sujet"
+                  required
+                />
+              </div>
+              <div class="sm:col-span-2">
+                <textarea
+                  id="message"
+                  rows="6"
+                  class="block p-2.5 w-full text-sm text-gray-900 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 bg-white dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                  placeholder="Bonjour,"
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                class="py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-600 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
+              >
+                Envoyer
+              </button>
+            </form>
+          </div>
+        </section>
       </main>
 
       <!-- Footer -->
@@ -357,7 +490,9 @@
                 >
               </li>
               <li>
-                <a href="/contact.html" class="mr-4 hover:underline md:mr-6">Contact</a>
+                <a href="/contact.html" class="mr-4 hover:underline md:mr-6"
+                  >Contact</a
+                >
               </li>
               <li>
                 <a href="#" class="mr-4 hover:underline md:mr-6">Crédits</a>
@@ -368,17 +503,29 @@
             >
               <li>
                 <a href="#" class="mr-4 md:mr-6">
-                  <img class="max-h-8" src="/img/social/logo-facebook.png" alt="Logo Facebook">
+                  <img
+                    class="max-h-8"
+                    src="/img/social/logo-facebook.png"
+                    alt="Logo Facebook"
+                  />
                 </a>
               </li>
               <li>
                 <a href="#" class="mr-4 md:mr-6">
-                  <img class="max-h-8" src="/img/social/logo-instagram.png" alt="Logo Instagram">
+                  <img
+                    class="max-h-8"
+                    src="/img/social/logo-instagram.png"
+                    alt="Logo Instagram"
+                  />
                 </a>
               </li>
               <li>
                 <a href="#" class="mr-4 md:mr-6">
-                  <img class="max-h-8" src="/img/social/logo-x.png" alt="Logo X">
+                  <img
+                    class="max-h-8"
+                    src="/img/social/logo-x.png"
+                    alt="Logo X"
+                  />
                 </a>
               </li>
             </ul>
