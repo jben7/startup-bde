@@ -1,0 +1,1091 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.9.2/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+    <title>Accueil</title>
+  </head>
+  <body class="bg-[#180537] font-montserrat cursor-default">
+    <div
+      id="separator_header_content_footer"
+      class="flex flex-col overflow-hidden"
+    >
+      <!-- Header -->
+      <nav
+        class="fixed top-0 left-0 w-full px-4 py-4 flex justify-between items-center z-40 bg-[#EFEFEF]/30 backdrop-blur-sm"
+      >
+        <a class="text-3xl font-bold leading-none" href="/">
+          <img src="/img/logo.png" alt="logo" class="max-h-16 cursor-pointer" />
+        </a>
+        <div class="lg:hidden">
+          <button class="navbar-burger flex items-center text-wh p-3">
+            <svg
+              class="block h-4 w-4 fill-current"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>Mobile menu</title>
+              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+            </svg>
+          </button>
+        </div>
+        <ul
+          class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6"
+        >
+          <li>
+            <a
+              class="text-sm text-white hover:text-gray-500"
+              href="/calendar.html"
+              >Calendrier</a
+            >
+          </li>
+          <li class="text-gray-300"></li>
+          <li>
+            <a class="text-sm text-white hover:text-gray-500" href="/team.html"
+              >Equipe BDE</a
+            >
+          </li>
+          <li class="text-gray-300"></li>
+          <li>
+            <a class="text-sm text-white hover:text-gray-500" href="#"
+              >Actualités</a
+            >
+          </li>
+          <li class="text-gray-300"></li>
+          <li>
+            <a
+              class="text-sm text-white hover:text-gray-500"
+              href="/school.html"
+              >Ecole G4</a
+            >
+          </li>
+          <li class="text-gray-300"></li>
+          <li>
+            <a class="text-sm text-white hover:text-gray-500" href="#"
+              >Partenaires</a
+            >
+          </li>
+        </ul>
+
+        <div class="hidden lg:block pr-5 w-52 relative">
+          <a href="/joining.html" class="">
+            <img src="/img/ctabutton.png" class="" alt="Adhésion" />
+          </a>
+        </div>
+      </nav>
+      <div class="navbar-menu relative z-40 hidden">
+        <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
+        <nav
+          class="fixed top-0 right-0 bottom-0 flex flex-col w-full py-6 pb-12 px-6 bg-[#EAE9EA]/60 backdrop-blur-md border-r overflow-y-auto"
+        >
+          <div class="flex items-center justify-end mb-1">
+            <button class="navbar-close">
+              <svg
+                class="h-12 w-12 text-white cursor-pointer hover:text-gray-500"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div>
+            <ul>
+              <li class="mb-1">
+                <a
+                  class="w-full flex items-center justify-between p-4 text-lg font-semibold text-white rounded"
+                  href="/calendar.html"
+                >
+                  <div>Calendrier</div>
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M4 12C4 11.4477 4.44772 11 5 11H19C19.5523 11 20 11.4477 20 12C20 12.5523 19.5523 13 19 13H5C4.44772 13 4 12.5523 4 12Z"
+                      fill="white"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M11.2929 4.29289C11.6834 3.90237 12.3166 3.90237 12.7071 4.29289L19.7071 11.2929C20.0976 11.6834 20.0976 12.3166 19.7071 12.7071L12.7071 19.7071C12.3166 20.0976 11.6834 20.0976 11.2929 19.7071C10.9024 19.3166 10.9024 18.6834 11.2929 18.2929L17.5858 12L11.2929 5.70711C10.9024 5.31658 10.9024 4.68342 11.2929 4.29289Z"
+                      fill="white"
+                    />
+                  </svg>
+                </a>
+                <hr class="solid bg-white" />
+              </li>
+              <li class="mb-1">
+                <a
+                  class="w-full font flex items-center justify-between p-4 text-lg font-semibold text-white rounded"
+                  href="/team.html"
+                >
+                  <div>Equipe BDE</div>
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M4 12C4 11.4477 4.44772 11 5 11H19C19.5523 11 20 11.4477 20 12C20 12.5523 19.5523 13 19 13H5C4.44772 13 4 12.5523 4 12Z"
+                      fill="white"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M11.2929 4.29289C11.6834 3.90237 12.3166 3.90237 12.7071 4.29289L19.7071 11.2929C20.0976 11.6834 20.0976 12.3166 19.7071 12.7071L12.7071 19.7071C12.3166 20.0976 11.6834 20.0976 11.2929 19.7071C10.9024 19.3166 10.9024 18.6834 11.2929 18.2929L17.5858 12L11.2929 5.70711C10.9024 5.31658 10.9024 4.68342 11.2929 4.29289Z"
+                      fill="white"
+                    />
+                  </svg>
+                </a>
+                <hr class="solid bg-white" />
+              </li>
+              <li class="mb-1">
+                <a
+                  class="w-full font flex items-center justify-between p-4 text-lg font-semibold text-white rounded"
+                  href="#"
+                >
+                  <div>Actualités</div>
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M4 12C4 11.4477 4.44772 11 5 11H19C19.5523 11 20 11.4477 20 12C20 12.5523 19.5523 13 19 13H5C4.44772 13 4 12.5523 4 12Z"
+                      fill="white"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M11.2929 4.29289C11.6834 3.90237 12.3166 3.90237 12.7071 4.29289L19.7071 11.2929C20.0976 11.6834 20.0976 12.3166 19.7071 12.7071L12.7071 19.7071C12.3166 20.0976 11.6834 20.0976 11.2929 19.7071C10.9024 19.3166 10.9024 18.6834 11.2929 18.2929L17.5858 12L11.2929 5.70711C10.9024 5.31658 10.9024 4.68342 11.2929 4.29289Z"
+                      fill="white"
+                    />
+                  </svg>
+                </a>
+                <hr class="solid bg-white" />
+              </li>
+              <li class="mb-1">
+                <a
+                  class="w-full font flex items-center justify-between p-4 text-lg font-semibold text-white rounded"
+                  href="/school.html"
+                >
+                  <div>Ecole G4</div>
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M4 12C4 11.4477 4.44772 11 5 11H19C19.5523 11 20 11.4477 20 12C20 12.5523 19.5523 13 19 13H5C4.44772 13 4 12.5523 4 12Z"
+                      fill="white"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M11.2929 4.29289C11.6834 3.90237 12.3166 3.90237 12.7071 4.29289L19.7071 11.2929C20.0976 11.6834 20.0976 12.3166 19.7071 12.7071L12.7071 19.7071C12.3166 20.0976 11.6834 20.0976 11.2929 19.7071C10.9024 19.3166 10.9024 18.6834 11.2929 18.2929L17.5858 12L11.2929 5.70711C10.9024 5.31658 10.9024 4.68342 11.2929 4.29289Z"
+                      fill="white"
+                    />
+                  </svg>
+                </a>
+                <hr class="solid bg-white" />
+              </li>
+              <li class="mb-1">
+                <a
+                  class="w-full font flex items-center justify-between p-4 text-lg font-semibold text-white rounded"
+                  href="#"
+                >
+                  <div>Partenaires</div>
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M4 12C4 11.4477 4.44772 11 5 11H19C19.5523 11 20 11.4477 20 12C20 12.5523 19.5523 13 19 13H5C4.44772 13 4 12.5523 4 12Z"
+                      fill="white"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M11.2929 4.29289C11.6834 3.90237 12.3166 3.90237 12.7071 4.29289L19.7071 11.2929C20.0976 11.6834 20.0976 12.3166 19.7071 12.7071L12.7071 19.7071C12.3166 20.0976 11.6834 20.0976 11.2929 19.7071C10.9024 19.3166 10.9024 18.6834 11.2929 18.2929L17.5858 12L11.2929 5.70711C10.9024 5.31658 10.9024 4.68342 11.2929 4.29289Z"
+                      fill="white"
+                    />
+                  </svg>
+                </a>
+                <hr class="solid bg-white" />
+              </li>
+            </ul>
+          </div>
+          <div class="mt-auto w-full flex justify-center">
+            <a href="/joining.html" class="w-60">
+              <img src="/img/ctabutton.png" class="" alt="Adhésion" />
+            </a>
+          </div>
+          <div class="mt-auto text-white font-semibold flex flex-col gap-y-6">
+            <div class="mt-3">Contact</div>
+            <div class="flex justify-start gap-6 items-center">
+              <svg
+                width="34"
+                height="34"
+                viewBox="0 0 34 34"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M17.0002 2.83333C13.9944 2.83333 11.1117 4.02738 8.98629 6.15279C6.86087 8.2782 5.66683 11.1609 5.66683 14.1667C5.66683 18.5556 8.52246 22.8144 11.6536 26.1194C13.1902 27.7414 14.7316 29.0692 15.8905 29.992C16.3217 30.3355 16.6984 30.6215 17.0002 30.8445C17.3019 30.6215 17.6786 30.3355 18.1099 29.992C19.2687 29.0692 20.8101 27.7414 22.3467 26.1194C25.4779 22.8144 28.3335 18.5556 28.3335 14.1667C28.3335 11.1609 27.1395 8.2782 25.014 6.15279C22.8886 4.02738 20.0059 2.83333 17.0002 2.83333ZM17.0002 32.5833C16.2143 33.7621 16.214 33.7618 16.2136 33.7616L16.2095 33.7589L16.2001 33.7525L16.1676 33.7306C16.14 33.7118 16.1007 33.6849 16.0504 33.6501C15.9497 33.5804 15.8052 33.4788 15.6229 33.3472C15.2584 33.084 14.7425 32.6998 14.1255 32.2085C12.8937 31.2276 11.2476 29.8107 9.59673 28.0681C6.35287 24.644 2.8335 19.6944 2.8335 14.1667C2.8335 10.4094 4.32605 6.80609 6.98282 4.14932C9.63958 1.49256 13.2429 0 17.0002 0C20.7574 0 24.3607 1.49256 27.0175 4.14932C29.6743 6.80609 31.1668 10.4094 31.1668 14.1667C31.1668 19.6944 27.6475 24.644 24.4036 28.0681C22.7527 29.8107 21.1066 31.2276 19.8748 32.2085C19.2578 32.6998 18.7419 33.084 18.3775 33.3472C18.1952 33.4788 18.0506 33.5804 17.95 33.6501C17.8996 33.6849 17.8603 33.7118 17.8327 33.7306L17.8002 33.7525L17.7908 33.7589L17.7878 33.7609C17.7874 33.7611 17.786 33.7621 17.0002 32.5833ZM17.0002 32.5833L17.786 33.7621C17.3101 34.0793 16.6894 34.0788 16.2136 33.7616L17.0002 32.5833Z"
+                  fill="white"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M17.0002 11.3333C15.4354 11.3333 14.1668 12.6019 14.1668 14.1667C14.1668 15.7315 15.4354 17 17.0002 17C18.565 17 19.8335 15.7315 19.8335 14.1667C19.8335 12.6019 18.565 11.3333 17.0002 11.3333ZM11.3335 14.1667C11.3335 11.0371 13.8705 8.5 17.0002 8.5C20.1298 8.5 22.6668 11.0371 22.6668 14.1667C22.6668 17.2963 20.1298 19.8333 17.0002 19.8333C13.8705 19.8333 11.3335 17.2963 11.3335 14.1667Z"
+                  fill="white"
+                />
+              </svg>
+              <p>Lyon (69)</p>
+            </div>
+            <div class="flex justify-start gap-6 items-center">
+              <svg
+                width="34"
+                height="34"
+                viewBox="0 0 34 34"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M28.1773 32.4841C28.0498 32.4841 27.9223 32.4841 27.7807 32.47C23.2048 31.9741 18.7565 30.3875 14.9173 27.8941C11.3473 25.6275 8.259 22.5391 5.99233 18.9691C3.499 15.1158 1.91234 10.6533 1.43067 6.07746C1.374 5.46829 1.44484 4.88746 1.629 4.32079C1.81317 3.75413 2.12484 3.24413 2.5215 2.80496C2.91817 2.36579 3.39983 2.02579 3.93817 1.78496C4.49067 1.54413 5.0715 1.41663 5.6665 1.41663H9.9165C10.9082 1.41663 11.9282 1.77079 12.7215 2.45079C13.5007 3.11663 14.0107 4.05163 14.1523 5.07163C14.3223 6.33246 14.634 7.57913 15.0732 8.75496C15.3565 9.51996 15.4273 10.3416 15.2432 11.135C15.0732 11.9283 14.6765 12.665 14.1098 13.2316L13.0898 14.2516C14.7615 16.8583 16.9715 19.0825 19.5923 20.7541L20.6123 19.7341C21.1932 19.1533 21.9298 18.7566 22.7232 18.6008C23.5165 18.4308 24.3382 18.4875 25.1032 18.7708C26.279 19.21 27.5257 19.5216 28.7723 19.6916C29.8207 19.8333 30.7557 20.3575 31.4357 21.1508C32.1015 21.9441 32.4698 22.95 32.4415 23.9841V28.22C32.4415 28.815 32.3282 29.3816 32.0873 29.9341C31.8465 30.4725 31.4923 30.9683 31.0673 31.365C30.6282 31.7616 30.1182 32.0733 29.5515 32.2575C29.0982 32.4133 28.6448 32.4841 28.1773 32.4841ZM9.94483 4.24996H9.93067H5.6665C5.46817 4.24996 5.284 4.29246 5.09983 4.37746C4.91567 4.44829 4.74567 4.56163 4.61817 4.70329C4.4765 4.84496 4.37733 5.01496 4.32067 5.21329C4.264 5.39746 4.23567 5.59579 4.24984 5.79413C4.689 9.91663 6.11983 13.94 8.37233 17.4391C10.4265 20.6691 13.2173 23.46 16.4473 25.5141C19.9323 27.7808 23.9557 29.1975 28.064 29.6508C28.234 29.665 28.4323 29.6366 28.6165 29.58C28.8007 29.5233 28.9707 29.41 29.1265 29.2825C29.2823 29.155 29.3957 28.985 29.4665 28.8008C29.5515 28.6166 29.5798 28.4183 29.5798 28.22V23.97C29.5798 23.9558 29.5798 23.9416 29.5798 23.9416C29.594 23.5875 29.4665 23.2616 29.2398 22.9925C29.0132 22.7233 28.7015 22.5533 28.3615 22.5108C26.9165 22.3266 25.4715 21.9583 24.0832 21.4483C23.8282 21.3491 23.5448 21.335 23.2898 21.3916C23.0207 21.4483 22.7798 21.5758 22.5815 21.7741L20.7965 23.5733C20.3432 24.0266 19.649 24.1116 19.0965 23.8C15.3282 21.6608 12.2115 18.53 10.0582 14.7758C9.76067 14.1808 9.84567 13.4866 10.299 13.0333L12.0982 11.2341C12.2823 11.05 12.4098 10.8091 12.4665 10.54C12.5232 10.2708 12.509 10.0016 12.4098 9.74663C11.8857 8.35829 11.5315 6.91329 11.3332 5.45413C11.2907 5.12829 11.1207 4.81663 10.8657 4.58996C10.6107 4.37746 10.2848 4.24996 9.94483 4.24996Z"
+                  fill="white"
+                />
+              </svg>
+              <p>00.00.00.00.00</p>
+            </div>
+            <div class="flex justify-start gap-6 items-center">
+              <svg
+                width="34"
+                height="34"
+                viewBox="0 0 34 34"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M5.6665 7.08333C4.89057 7.08333 4.24984 7.72407 4.24984 8.5V25.5C4.24984 26.2759 4.89057 26.9167 5.6665 26.9167H28.3332C29.1091 26.9167 29.7498 26.2759 29.7498 25.5V8.5C29.7498 7.72407 29.1091 7.08333 28.3332 7.08333H5.6665ZM1.4165 8.5C1.4165 6.15926 3.32577 4.25 5.6665 4.25H28.3332C30.6739 4.25 32.5832 6.15926 32.5832 8.5V25.5C32.5832 27.8407 30.6739 29.75 28.3332 29.75H5.6665C3.32577 29.75 1.4165 27.8407 1.4165 25.5V8.5Z"
+                  fill="white"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M1.67271 7.68764C2.12139 7.04667 3.00473 6.89078 3.6457 7.33946L17 16.6874L30.3542 7.33946C30.9952 6.89078 31.8785 7.04667 32.3272 7.68764C32.7759 8.32861 32.62 9.21194 31.979 9.66062L17.8124 19.5773C17.3246 19.9187 16.6753 19.9187 16.1876 19.5773L2.02089 9.66062C1.37992 9.21194 1.22403 8.32861 1.67271 7.68764Z"
+                  fill="white"
+                />
+              </svg>
+
+              <p>BDE@gmail.com</p>
+            </div>
+            <div class="flex justify-around items-center">
+              <a href="#">
+                <img
+                  class="max-h-12"
+                  src="/img/social/logo-facebook.png"
+                  alt="Logo facebook"
+                />
+              </a>
+              <a href="#">
+                <img
+                  class="max-h-12"
+                  src="img/social/logo-instagram.png"
+                  alt="Logo instagram"
+                />
+              </a>
+              <a href="#">
+                <img
+                  class="max-h-12"
+                  src="/img/social/logo-x.png"
+                  alt="Logo X"
+                />
+              </a>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <!-- Fin header -->
+
+      <main
+        class="pt-24 flex text-white justify-between lg:px-[10rem] flex-col lg:flex-row"
+      >
+        <div class="py-16 [&>h2]:font-bold [&>h2]:text-4xl [&>h2]:py-9" >
+          <h2 class="">Définitions</h2>
+          <p>
+            <b>Client :</b> tout professionnel ou personne physique capable au
+            sens des articles 1123 et suivants du Code civil, ou personne
+            morale, qui visite le Site objet des présentes conditions
+            générales.<br />
+            <b>Prestations et Services :</b>
+            <a href="https://jad.labo-g4.fr/">https://jad.labo-g4.fr/</a> met à
+            disposition des Clients :
+          </p>
+
+          <p>
+            <b>Contenu :</b> Ensemble des éléments constituants l’information
+            présente sur le Site, notamment textes – images – vidéos.
+          </p>
+
+          <p>
+            <b>Informations clients :</b> Ci après dénommé « Information (s) »
+            qui correspondent à l’ensemble des données personnelles susceptibles
+            d’être détenues par
+            <a href="https://jad.labo-g4.fr/">https://jad.labo-g4.fr/</a> pour
+            la gestion de votre compte, de la gestion de la relation client et à
+            des fins d’analyses et de statistiques.
+          </p>
+
+          <p>
+            <b>Utilisateur :</b> Internaute se connectant, utilisant le site
+            susnommé.
+          </p>
+          <p>
+            <b>Informations personnelles :</b> « Les informations qui
+            permettent, sous quelque forme que ce soit, directement ou non,
+            l'identification des personnes physiques auxquelles elles
+            s'appliquent » (article 4 de la loi n° 78-17 du 6 janvier 1978).
+          </p>
+          <p>
+            Les termes « données à caractère personnel », « personne concernée
+            », « sous traitant » et « données sensibles » ont le sens défini par
+            le Règlement Général sur la Protection des Données (RGPD : n°
+            2016-679)
+          </p>
+
+          <h2>1. Présentation du site internet.</h2>
+          <p>
+            En vertu de l'article 6 de la loi n° 2004-575 du 21 juin 2004 pour
+            la confiance dans l'économie numérique, il est précisé aux
+            utilisateurs du site internet
+            <a href="https://jad.labo-g4.fr/">https://jad.labo-g4.fr/</a>
+            l'identité des différents intervenants dans le cadre de sa
+            réalisation et de son suivi:
+          </p>
+          <p>
+            <strong>Propriétaire</strong> : Association BDE G4 Lyon – 24 Ave.
+            Joannès Masset 69009 Lyon<br />
+
+            <strong>Responsable publication</strong> : Paul Antoine –
+            paul.atne@gmail.com<br />
+            Le responsable publication est une personne physique ou une personne
+            morale.<br />
+            <strong>Webmaster</strong> : Paul Antoine – paul.atne@gmail.com<br />
+            <strong>Hébergeur</strong> : ovh – 2 rue Kellermann 59100 Roubaix
+            1007<br />
+            <strong>Délégué à la protection des données</strong> : Paul Antoine
+            – paul.atne@gmail.com<br />
+          </p>
+
+          <div ng-bind-html="linkHTML">
+            <p>
+              Ce modèle de mentions légales est proposé par le
+              <a
+                href="https://fr.orson.io/1371/generateur-mentions-legales"
+                title="générateur gratuit offert par Orson.io"
+                >générateur gratuit offert par Orson.io</a
+              >
+            </p>
+          </div>
+
+          <h2>
+            2. Conditions générales d’utilisation du site et des services
+            proposés.
+          </h2>
+
+          <p>
+            Le Site constitue une œuvre de l’esprit protégée par les
+            dispositions du Code de la Propriété Intellectuelle et des
+            Réglementations Internationales applicables. Le Client ne peut en
+            aucune manière réutiliser, céder ou exploiter pour son propre compte
+            tout ou partie des éléments ou travaux du Site.
+          </p>
+
+          <p>
+            L’utilisation du site
+            <a href="https://jad.labo-g4.fr/">https://jad.labo-g4.fr/</a>
+            implique l’acceptation pleine et entière des conditions générales
+            d’utilisation ci-après décrites. Ces conditions d’utilisation sont
+            susceptibles d’être modifiées ou complétées à tout moment, les
+            utilisateurs du site
+            <a href="https://jad.labo-g4.fr/">https://jad.labo-g4.fr/</a> sont
+            donc invités à les consulter de manière régulière.
+          </p>
+
+          <p>
+            Ce site internet est normalement accessible à tout moment aux
+            utilisateurs. Une interruption pour raison de maintenance technique
+            peut être toutefois décidée par
+            <a href="https://jad.labo-g4.fr/">https://jad.labo-g4.fr/</a>, qui
+            s’efforcera alors de communiquer préalablement aux utilisateurs les
+            dates et heures de l’intervention. Le site web
+            <a href="https://jad.labo-g4.fr/">https://jad.labo-g4.fr/</a> est
+            mis à jour régulièrement par
+            <a href="https://jad.labo-g4.fr/">https://jad.labo-g4.fr/</a>
+            responsable. De la même façon, les mentions légales peuvent être
+            modifiées à tout moment : elles s’imposent néanmoins à l’utilisateur
+            qui est invité à s’y référer le plus souvent possible afin d’en
+            prendre connaissance.
+          </p>
+
+          <h2>3. Description des services fournis.</h2>
+
+          <p>
+            Le site internet
+            <a href="https://jad.labo-g4.fr/">https://jad.labo-g4.fr/</a> a pour
+            objet de fournir une information concernant l’ensemble des activités
+            de la société.
+            <a href="https://jad.labo-g4.fr/">https://jad.labo-g4.fr/</a>
+            s’efforce de fournir sur le site
+            <a href="https://jad.labo-g4.fr/">https://jad.labo-g4.fr/</a> des
+            informations aussi précises que possible. Toutefois, il ne pourra
+            être tenu responsable des oublis, des inexactitudes et des carences
+            dans la mise à jour, qu’elles soient de son fait ou du fait des
+            tiers partenaires qui lui fournissent ces informations.
+          </p>
+
+          <p>
+            Toutes les informations indiquées sur le site
+            <a href="https://jad.labo-g4.fr/">https://jad.labo-g4.fr/</a> sont
+            données à titre indicatif, et sont susceptibles d’évoluer. Par
+            ailleurs, les renseignements figurant sur le site
+            <a href="https://jad.labo-g4.fr/">https://jad.labo-g4.fr/</a> ne
+            sont pas exhaustifs. Ils sont donnés sous réserve de modifications
+            ayant été apportées depuis leur mise en ligne.
+          </p>
+
+          <h2>4. Limitations contractuelles sur les données techniques.</h2>
+
+          <p>
+            Le site utilise la technologie JavaScript. Le site Internet ne
+            pourra être tenu responsable de dommages matériels liés à
+            l’utilisation du site. De plus, l’utilisateur du site s’engage à
+            accéder au site en utilisant un matériel récent, ne contenant pas de
+            virus et avec un navigateur de dernière génération mis-à-jour Le
+            site
+            <a href="https://jad.labo-g4.fr/">https://jad.labo-g4.fr/</a> est
+            hébergé chez un prestataire sur le territoire de l’Union Européenne
+            conformément aux dispositions du Règlement Général sur la Protection
+            des Données (RGPD : n° 2016-679)
+          </p>
+
+          <p>
+            L’objectif est d’apporter une prestation qui assure le meilleur taux
+            d’accessibilité. L’hébergeur assure la continuité de son service 24
+            Heures sur 24, tous les jours de l’année. Il se réserve néanmoins la
+            possibilité d’interrompre le service d’hébergement pour les durées
+            les plus courtes possibles notamment à des fins de maintenance,
+            d’amélioration de ses infrastructures, de défaillance de ses
+            infrastructures ou si les Prestations et Services génèrent un trafic
+            réputé anormal.
+          </p>
+
+          <p>
+            <a href="https://jad.labo-g4.fr/">https://jad.labo-g4.fr/</a> et
+            l’hébergeur ne pourront être tenus responsables en cas de
+            dysfonctionnement du réseau Internet, des lignes téléphoniques ou du
+            matériel informatique et de téléphonie lié notamment à
+            l’encombrement du réseau empêchant l’accès au serveur.
+          </p>
+
+          <h2>5. Propriété intellectuelle et contrefaçons.</h2>
+
+          <p>
+            <a href="https://jad.labo-g4.fr/">https://jad.labo-g4.fr/</a> est
+            propriétaire des droits de propriété intellectuelle et détient les
+            droits d’usage sur tous les éléments accessibles sur le site
+            internet, notamment les textes, images, graphismes, logos, vidéos,
+            icônes et sons. Toute reproduction, représentation, modification,
+            publication, adaptation de tout ou partie des éléments du site, quel
+            que soit le moyen ou le procédé utilisé, est interdite, sauf
+            autorisation écrite préalable de :
+            <a href="https://jad.labo-g4.fr/">https://jad.labo-g4.fr/</a>.
+          </p>
+
+          <p>
+            Toute exploitation non autorisée du site ou de l’un quelconque des
+            éléments qu’il contient sera considérée comme constitutive d’une
+            contrefaçon et poursuivie conformément aux dispositions des articles
+            L.335-2 et suivants du Code de Propriété Intellectuelle.
+          </p>
+
+          <h2>6. Limitations de responsabilité.</h2>
+
+          <p>
+            <a href="https://jad.labo-g4.fr/">https://jad.labo-g4.fr/</a> agit
+            en tant qu’éditeur du site.
+            <a href="https://jad.labo-g4.fr/">https://jad.labo-g4.fr/</a> est
+            responsable de la qualité et de la véracité du Contenu qu’il publie.
+          </p>
+
+          <p>
+            <a href="https://jad.labo-g4.fr/">https://jad.labo-g4.fr/</a> ne
+            pourra être tenu responsable des dommages directs et indirects
+            causés au matériel de l’utilisateur, lors de l’accès au site
+            internet
+            <a href="https://jad.labo-g4.fr/">https://jad.labo-g4.fr/</a>, et
+            résultant soit de l’utilisation d’un matériel ne répondant pas aux
+            spécifications indiquées au point 4, soit de l’apparition d’un bug
+            ou d’une incompatibilité.
+          </p>
+
+          <p>
+            <a href="https://jad.labo-g4.fr/">https://jad.labo-g4.fr/</a> ne
+            pourra également être tenu responsable des dommages indirects (tels
+            par exemple qu’une perte de marché ou perte d’une chance)
+            consécutifs à l’utilisation du site
+            <a href="https://jad.labo-g4.fr/">https://jad.labo-g4.fr/</a>. Des
+            espaces interactifs (possibilité de poser des questions dans
+            l’espace contact) sont à la disposition des utilisateurs.
+            <a href="https://jad.labo-g4.fr/">https://jad.labo-g4.fr/</a> se
+            réserve le droit de supprimer, sans mise en demeure préalable, tout
+            contenu déposé dans cet espace qui contreviendrait à la législation
+            applicable en France, en particulier aux dispositions relatives à la
+            protection des données. Le cas échéant,
+            <a href="https://jad.labo-g4.fr/">https://jad.labo-g4.fr/</a> se
+            réserve également la possibilité de mettre en cause la
+            responsabilité civile et/ou pénale de l’utilisateur, notamment en
+            cas de message à caractère raciste, injurieux, diffamant, ou
+            pornographique, quel que soit le support utilisé (texte,
+            photographie …).
+          </p>
+
+          <h2>7. Gestion des données personnelles.</h2>
+
+          <p>
+            Le Client est informé des réglementations concernant la
+            communication marketing, la loi du 21 Juin 2014 pour la confiance
+            dans l’Economie Numérique, la Loi Informatique et Liberté du 06 Août
+            2004 ainsi que du Règlement Général sur la Protection des Données
+            (RGPD : n° 2016-679).
+          </p>
+
+          <h3>7.1 Responsables de la collecte des données personnelles</h3>
+
+          <p>
+            Pour les Données Personnelles collectées dans le cadre de la
+            création du compte personnel de l’Utilisateur et de sa navigation
+            sur le Site, le responsable du traitement des Données Personnelles
+            est : BDE G4 Lyon.
+            <a href="https://jad.labo-g4.fr/">https://jad.labo-g4.fr/</a>est
+            représenté par Paul Antoine, son représentant légal
+          </p>
+
+          <p>
+            En tant que responsable du traitement des données qu’il collecte,
+            <a href="https://jad.labo-g4.fr/">https://jad.labo-g4.fr/</a>
+            s’engage à respecter le cadre des dispositions légales en vigueur.
+            Il lui appartient notamment au Client d’établir les finalités de ses
+            traitements de données, de fournir à ses prospects et clients, à
+            partir de la collecte de leurs consentements, une information
+            complète sur le traitement de leurs données personnelles et de
+            maintenir un registre des traitements conforme à la réalité. Chaque
+            fois que
+            <a href="https://jad.labo-g4.fr/">https://jad.labo-g4.fr/</a> traite
+            des Données Personnelles,
+            <a href="https://jad.labo-g4.fr/">https://jad.labo-g4.fr/</a> prend
+            toutes les mesures raisonnables pour s’assurer de l’exactitude et de
+            la pertinence des Données Personnelles au regard des finalités pour
+            lesquelles
+            <a href="https://jad.labo-g4.fr/">https://jad.labo-g4.fr/</a> les
+            traite.
+          </p>
+
+          <h3>7.2 Finalité des données collectées</h3>
+
+          <p>
+            <a href="https://jad.labo-g4.fr/">https://jad.labo-g4.fr/</a> est
+            susceptible de traiter tout ou partie des données :
+          </p>
+
+          <ul>
+            <li>
+              pour permettre la navigation sur le Site et la gestion et la
+              traçabilité des prestations et services commandés par
+              l’utilisateur : données de connexion et d’utilisation du Site,
+              facturation, historique des commandes, etc.
+            </li>
+
+            <li>
+              pour prévenir et lutter contre la fraude informatique (spamming,
+              hacking…) : matériel informatique utilisé pour la navigation,
+              l’adresse IP, le mot de passe (hashé)
+            </li>
+
+            <li>
+              pour améliorer la navigation sur le Site : données de connexion et
+              d’utilisation
+            </li>
+
+            <li>
+              pour mener des enquêtes de satisfaction facultatives sur
+              <a href="https://jad.labo-g4.fr/">https://jad.labo-g4.fr/</a> :
+              adresse email
+            </li>
+            <li>
+              pour mener des campagnes de communication (sms, mail) : numéro de
+              téléphone, adresse email
+            </li>
+          </ul>
+
+          <p>
+            <a href="https://jad.labo-g4.fr/">https://jad.labo-g4.fr/</a> ne
+            commercialise pas vos données personnelles qui sont donc uniquement
+            utilisées par nécessité ou à des fins statistiques et d’analyses.
+          </p>
+
+          <h3>7.3 Droit d’accès, de rectification et d’opposition</h3>
+
+          <p>
+            Conformément à la réglementation européenne en vigueur, les
+            Utilisateurs de
+            <a href="https://jad.labo-g4.fr/">https://jad.labo-g4.fr/</a>
+            disposent des droits suivants :
+          </p>
+          <ul>
+            <li>
+              droit d'accès (article 15 RGPD) et de rectification (article 16
+              RGPD), de mise à jour, de complétude des données des Utilisateurs
+              droit de verrouillage ou d’effacement des données des Utilisateurs
+              à caractère personnel (article 17 du RGPD), lorsqu’elles sont
+              inexactes, incomplètes, équivoques, périmées, ou dont la collecte,
+              l'utilisation, la communication ou la conservation est interdite
+            </li>
+
+            <li>
+              droit de retirer à tout moment un consentement (article 13-2c
+              RGPD)
+            </li>
+
+            <li>
+              droit à la limitation du traitement des données des Utilisateurs
+              (article 18 RGPD)
+            </li>
+
+            <li>
+              droit d’opposition au traitement des données des Utilisateurs
+              (article 21 RGPD)
+            </li>
+
+            <li>
+              droit à la portabilité des données que les Utilisateurs auront
+              fournies, lorsque ces données font l’objet de traitements
+              automatisés fondés sur leur consentement ou sur un contrat
+              (article 20 RGPD)
+            </li>
+
+            <li>
+              droit de définir le sort des données des Utilisateurs après leur
+              mort et de choisir à qui
+              <a href="https://jad.labo-g4.fr/">https://jad.labo-g4.fr/</a>
+              devra communiquer (ou non) ses données à un tiers qu’ils aura
+              préalablement désigné
+            </li>
+          </ul>
+
+          <p>
+            Dès que
+            <a href="https://jad.labo-g4.fr/">https://jad.labo-g4.fr/</a> a
+            connaissance du décès d’un Utilisateur et à défaut d’instructions de
+            sa part,
+            <a href="https://jad.labo-g4.fr/">https://jad.labo-g4.fr/</a>
+            s’engage à détruire ses données, sauf si leur conservation s’avère
+            nécessaire à des fins probatoires ou pour répondre à une obligation
+            légale.
+          </p>
+
+          <p>
+            Si l’Utilisateur souhaite savoir comment
+            <a href="https://jad.labo-g4.fr/">https://jad.labo-g4.fr/</a>
+            utilise ses Données Personnelles, demander à les rectifier ou
+            s’oppose à leur traitement, l’Utilisateur peut contacter
+            <a href="https://jad.labo-g4.fr/">https://jad.labo-g4.fr/</a> par
+            écrit à l’adresse suivante :
+          </p>
+
+          BDE G4 Lyon – DPO, Paul Antoine <br />
+          24 Ave. Joannès Masset 69009 Lyon.
+
+          <p>
+            Dans ce cas, l’Utilisateur doit indiquer les Données Personnelles
+            qu’il souhaiterait que
+            <a href="https://jad.labo-g4.fr/">https://jad.labo-g4.fr/</a>
+            corrige, mette à jour ou supprime, en s’identifiant précisément avec
+            une copie d’une pièce d’identité (carte d’identité ou passeport).
+          </p>
+
+          <p>
+            Les demandes de suppression de Données Personnelles seront soumises
+            aux obligations qui sont imposées à
+            <a href="https://jad.labo-g4.fr/">https://jad.labo-g4.fr/</a> par la
+            loi, notamment en matière de conservation ou d’archivage des
+            documents. Enfin, les Utilisateurs de
+            <a href="https://jad.labo-g4.fr/">https://jad.labo-g4.fr/</a>
+            peuvent déposer une réclamation auprès des autorités de contrôle, et
+            notamment de la CNIL (https://www.cnil.fr/fr/plaintes).
+          </p>
+
+          <h3>7.4 Non-communication des données personnelles</h3>
+
+          <p>
+            <a href="https://jad.labo-g4.fr/">https://jad.labo-g4.fr/</a>
+            s’interdit de traiter, héberger ou transférer les Informations
+            collectées sur ses Clients vers un pays situé en dehors de l’Union
+            européenne ou reconnu comme « non adéquat » par la Commission
+            européenne sans en informer préalablement le client. Pour autant,
+            <a href="https://jad.labo-g4.fr/">https://jad.labo-g4.fr/</a> reste
+            libre du choix de ses sous-traitants techniques et commerciaux à la
+            condition qu’il présentent les garanties suffisantes au regard des
+            exigences du Règlement Général sur la Protection des Données (RGPD :
+            n° 2016-679).
+          </p>
+
+          <p>
+            <a href="https://jad.labo-g4.fr/">https://jad.labo-g4.fr/</a>
+            s’engage à prendre toutes les précautions nécessaires afin de
+            préserver la sécurité des Informations et notamment qu’elles ne
+            soient pas communiquées à des personnes non autorisées. Cependant,
+            si un incident impactant l’intégrité ou la confidentialité des
+            Informations du Client est portée à la connaissance de
+            <a href="https://jad.labo-g4.fr/">https://jad.labo-g4.fr/</a>,
+            celle-ci devra dans les meilleurs délais informer le Client et lui
+            communiquer les mesures de corrections prises. Par ailleurs
+            <a href="https://jad.labo-g4.fr/">https://jad.labo-g4.fr/</a> ne
+            collecte aucune « données sensibles ».
+          </p>
+
+          <p>
+            Les Données Personnelles de l’Utilisateur peuvent être traitées par
+            des filiales de
+            <a href="https://jad.labo-g4.fr/">https://jad.labo-g4.fr/</a> et des
+            sous-traitants (prestataires de services), exclusivement afin de
+            réaliser les finalités de la présente politique.
+          </p>
+          <p>
+            Dans la limite de leurs attributions respectives et pour les
+            finalités rappelées ci-dessus, les principales personnes
+            susceptibles d’avoir accès aux données des Utilisateurs de
+            <a href="https://jad.labo-g4.fr/">https://jad.labo-g4.fr/</a> sont
+            principalement les agents de notre service client.
+          </p>
+
+          <div ng-bind-html="rgpdHTML"></div>
+
+          <h2>8. Notification d’incident</h2>
+          <p>
+            Quels que soient les efforts fournis, aucune méthode de transmission
+            sur Internet et aucune méthode de stockage électronique n'est
+            complètement sûre. Nous ne pouvons en conséquence pas garantir une
+            sécurité absolue. Si nous prenions connaissance d'une brèche de la
+            sécurité, nous avertirions les utilisateurs concernés afin qu'ils
+            puissent prendre les mesures appropriées. Nos procédures de
+            notification d’incident tiennent compte de nos obligations légales,
+            qu'elles se situent au niveau national ou européen. Nous nous
+            engageons à informer pleinement nos clients de toutes les questions
+            relevant de la sécurité de leur compte et à leur fournir toutes les
+            informations nécessaires pour les aider à respecter leurs propres
+            obligations réglementaires en matière de reporting.
+          </p>
+          <p>
+            Aucune information personnelle de l'utilisateur du site
+            <a href="https://jad.labo-g4.fr/">https://jad.labo-g4.fr/</a> n'est
+            publiée à l'insu de l'utilisateur, échangée, transférée, cédée ou
+            vendue sur un support quelconque à des tiers. Seule l'hypothèse du
+            rachat de
+            <a href="https://jad.labo-g4.fr/">https://jad.labo-g4.fr/</a> et de
+            ses droits permettrait la transmission des dites informations à
+            l'éventuel acquéreur qui serait à son tour tenu de la même
+            obligation de conservation et de modification des données vis à vis
+            de l'utilisateur du site
+            <a href="https://jad.labo-g4.fr/">https://jad.labo-g4.fr/</a>.
+          </p>
+
+          <h3>Sécurité</h3>
+
+          <p>
+            Pour assurer la sécurité et la confidentialité des Données
+            Personnelles et des Données Personnelles de Santé,
+            <a href="https://jad.labo-g4.fr/">https://jad.labo-g4.fr/</a>
+            utilise des réseaux protégés par des dispositifs standards tels que
+            par pare-feu, la pseudonymisation, l’encryption et mot de passe.
+          </p>
+
+          <p>
+            Lors du traitement des Données Personnelles,
+            <a href="https://jad.labo-g4.fr/">https://jad.labo-g4.fr/</a>prend
+            toutes les mesures raisonnables visant à les protéger contre toute
+            perte, utilisation détournée, accès non autorisé, divulgation,
+            altération ou destruction.
+          </p>
+
+          <h2>9. Liens hypertextes « cookies » et balises (“tags”) internet</h2>
+          <p>
+            Le site
+            <a href="https://jad.labo-g4.fr/">https://jad.labo-g4.fr/</a>
+            contient un certain nombre de liens hypertextes vers d’autres sites,
+            mis en place avec l’autorisation de
+            <a href="https://jad.labo-g4.fr/">https://jad.labo-g4.fr/</a>.
+            Cependant,
+            <a href="https://jad.labo-g4.fr/">https://jad.labo-g4.fr/</a> n’a
+            pas la possibilité de vérifier le contenu des sites ainsi visités,
+            et n’assumera en conséquence aucune responsabilité de ce fait.
+          </p>
+          Sauf si vous décidez de désactiver les cookies, vous acceptez que le
+          site puisse les utiliser. Vous pouvez à tout moment désactiver ces
+          cookies et ce gratuitement à partir des possibilités de désactivation
+          qui vous sont offertes et rappelées ci-après, sachant que cela peut
+          réduire ou empêcher l’accessibilité à tout ou partie des Services
+          proposés par le site.
+          <p></p>
+
+          <h3>9.1. « COOKIES »</h3>
+          <p>
+            Un « cookie » est un petit fichier d’information envoyé sur le
+            navigateur de l’Utilisateur et enregistré au sein du terminal de
+            l’Utilisateur (ex : ordinateur, smartphone), (ci-après « Cookies »).
+            Ce fichier comprend des informations telles que le nom de domaine de
+            l’Utilisateur, le fournisseur d’accès Internet de l’Utilisateur, le
+            système d’exploitation de l’Utilisateur, ainsi que la date et
+            l’heure d’accès. Les Cookies ne risquent en aucun cas d’endommager
+            le terminal de l’Utilisateur.
+          </p>
+          <p>
+            <a href="https://jad.labo-g4.fr/">https://jad.labo-g4.fr/</a> est
+            susceptible de traiter les informations de l’Utilisateur concernant
+            sa visite du Site, telles que les pages consultées, les recherches
+            effectuées. Ces informations permettent à
+            <a href="https://jad.labo-g4.fr/">https://jad.labo-g4.fr/</a>
+            d’améliorer le contenu du Site, de la navigation de l’Utilisateur.
+          </p>
+          <p>
+            Les Cookies facilitant la navigation et/ou la fourniture des
+            services proposés par le Site, l’Utilisateur peut configurer son
+            navigateur pour qu’il lui permette de décider s’il souhaite ou non
+            les accepter de manière à ce que des Cookies soient enregistrés dans
+            le terminal ou, au contraire, qu’ils soient rejetés, soit
+            systématiquement, soit selon leur émetteur. L’Utilisateur peut
+            également configurer son logiciel de navigation de manière à ce que
+            l’acceptation ou le refus des Cookies lui soient proposés
+            ponctuellement, avant qu’un Cookie soit susceptible d’être
+            enregistré dans son terminal.
+            <a href="https://jad.labo-g4.fr/">https://jad.labo-g4.fr/</a>
+            informe l’Utilisateur que, dans ce cas, il se peut que les
+            fonctionnalités de son logiciel de navigation ne soient pas toutes
+            disponibles.
+          </p>
+          <p>
+            Si l’Utilisateur refuse l’enregistrement de Cookies dans son
+            terminal ou son navigateur, ou si l’Utilisateur supprime ceux qui y
+            sont enregistrés, l’Utilisateur est informé que sa navigation et son
+            expérience sur le Site peuvent être limitées. Cela pourrait
+            également être le cas lorsque
+            <a href="https://jad.labo-g4.fr/">https://jad.labo-g4.fr/</a> ou
+            l’un de ses prestataires ne peut pas reconnaître, à des fins de
+            compatibilité technique, le type de navigateur utilisé par le
+            terminal, les paramètres de langue et d’affichage ou le pays depuis
+            lequel le terminal semble connecté à Internet.
+          </p>
+          <p>
+            Le cas échéant,
+            <a href="https://jad.labo-g4.fr/">https://jad.labo-g4.fr/</a>
+            décline toute responsabilité pour les conséquences liées au
+            fonctionnement dégradé du Site et des services éventuellement
+            proposés par
+            <a href="https://jad.labo-g4.fr/">https://jad.labo-g4.fr/</a>,
+            résultant (i) du refus de Cookies par l’Utilisateur (ii) de
+            l’impossibilité pour
+            <a href="https://jad.labo-g4.fr/">https://jad.labo-g4.fr/</a>
+            d’enregistrer ou de consulter les Cookies nécessaires à leur
+            fonctionnement du fait du choix de l’Utilisateur. Pour la gestion
+            des Cookies et des choix de l’Utilisateur, la configuration de
+            chaque navigateur est différente. Elle est décrite dans le menu
+            d’aide du navigateur, qui permettra de savoir de quelle manière
+            l’Utilisateur peut modifier ses souhaits en matière de Cookies.
+          </p>
+          <p>
+            À tout moment, l’Utilisateur peut faire le choix d’exprimer et de
+            modifier ses souhaits en matière de Cookies.
+            <a href="https://jad.labo-g4.fr/">https://jad.labo-g4.fr/</a> pourra
+            en outre faire appel aux services de prestataires externes pour
+            l’aider à recueillir et traiter les informations décrites dans cette
+            section.
+          </p>
+          <p>
+            Enfin, en cliquant sur les icônes dédiées aux réseaux sociaux
+            Twitter, Facebook, Linkedin et Google Plus figurant sur le Site de
+            <a href="https://jad.labo-g4.fr/">https://jad.labo-g4.fr/</a> ou
+            dans son application mobile et si l’Utilisateur a accepté le dépôt
+            de cookies en poursuivant sa navigation sur le Site Internet ou
+            l’application mobile de
+            <a href="https://jad.labo-g4.fr/">https://jad.labo-g4.fr/</a>,
+            Twitter, Facebook, Linkedin et Google Plus peuvent également déposer
+            des cookies sur vos terminaux (ordinateur, tablette, téléphone
+            portable).
+          </p>
+          <p>
+            Ces types de cookies ne sont déposés sur vos terminaux qu’à
+            condition que vous y consentiez, en continuant votre navigation sur
+            le Site Internet ou l’application mobile de
+            <a href="https://jad.labo-g4.fr/">https://jad.labo-g4.fr/</a>. À
+            tout moment, l’Utilisateur peut néanmoins revenir sur son
+            consentement à ce que
+            <a href="https://jad.labo-g4.fr/">https://jad.labo-g4.fr/</a> dépose
+            ce type de cookies.
+          </p>
+
+          <h3>Article 9.2. BALISES (“TAGS”) INTERNET</h3>
+
+          <p>
+            <a href="https://jad.labo-g4.fr/">https://jad.labo-g4.fr/</a> peut
+            employer occasionnellement des balises Internet (également appelées
+            « tags », ou balises d’action, GIF à un pixel, GIF transparents, GIF
+            invisibles et GIF un à un) et les déployer par l’intermédiaire d’un
+            partenaire spécialiste d’analyses Web susceptible de se trouver (et
+            donc de stocker les informations correspondantes, y compris
+            l’adresse IP de l’Utilisateur) dans un pays étranger.
+          </p>
+
+          <p>
+            Ces balises sont placées à la fois dans les publicités en ligne
+            permettant aux internautes d’accéder au Site, et sur les différentes
+            pages de celui-ci.
+          </p>
+          <p>
+            Cette technologie permet à
+            <a href="https://jad.labo-g4.fr/">https://jad.labo-g4.fr/</a>
+            d’évaluer les réponses des visiteurs face au Site et l’efficacité de
+            ses actions (par exemple, le nombre de fois où une page est ouverte
+            et les informations consultées), ainsi que l’utilisation de ce Site
+            par l’Utilisateur.
+          </p>
+          <p>
+            Le prestataire externe pourra éventuellement recueillir des
+            informations sur les visiteurs du Site et d’autres sites Internet
+            grâce à ces balises, constituer des rapports sur l’activité du Site
+            à l’attention de
+            <a href="https://jad.labo-g4.fr/">https://jad.labo-g4.fr/</a>, et
+            fournir d’autres services relatifs à l’utilisation de celui-ci et
+            d’Internet.
+          </p>
+          <p></p>
+          <h2>10. Droit applicable et attribution de juridiction.</h2>
+          <p>
+            Tout litige en relation avec l’utilisation du site
+            <a href="https://jad.labo-g4.fr/">https://jad.labo-g4.fr/</a> est
+            soumis au droit français. En dehors des cas où la loi ne le permet
+            pas, il est fait attribution exclusive de juridiction aux tribunaux
+            compétents de Lyon
+          </p>
+        </div>
+      </main>
+
+      <!-- Footer -->
+      <footer
+        class="sticky top-0 px-4 py-4 flex justify-between items-center z-30 bg-[#EFEFEF]/30 backdrop-blur-sm"
+      >
+        <div class="w-full max-w-screen-xl mx-auto p-4 md:py-1">
+          <div class="sm:flex sm:items-center sm:justify-between">
+            <div class=""></div>
+            <ul
+              class="flex flex-wrap justify-around sm:gap-5 items-center mb-6 text-sm font-medium text-white sm:mb-0"
+            >
+              <li>
+                <a href="#" class="mr-4 hover:underline md:mr-6"
+                  >Mentions Légales</a
+                >
+              </li>
+              <li>
+                <a href="/contact.html" class="mr-4 hover:underline md:mr-6"
+                  >Contact</a
+                >
+              </li>
+              <li>
+                <a href="#" class="mr-4 hover:underline md:mr-6">Crédits</a>
+              </li>
+            </ul>
+            <ul
+              class="flex flex-wrap justify-around sm:gap-10 items-center mb-6 text-sm font-medium text-white sm:mb-0"
+            >
+              <li>
+                <a href="#" class="mr-4 md:mr-6">
+                  <img
+                    class="max-h-8"
+                    src="/img/social/logo-facebook.png"
+                    alt="Logo Facebook"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="#" class="mr-4 md:mr-6">
+                  <img
+                    class="max-h-8"
+                    src="/img/social/logo-instagram.png"
+                    alt="Logo Instagram"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="#" class="mr-4 md:mr-6">
+                  <img
+                    class="max-h-8"
+                    src="/img/social/logo-x.png"
+                    alt="Logo X"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+
+      <!-- Fin footer -->
+    </div>
+  </body>
+</html>
