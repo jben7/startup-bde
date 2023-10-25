@@ -15,13 +15,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $monMail = mail($to, $subject, $body, $headers);
     if ($monMail) {
-        echo "Message sent successfully!";
-        sleep(3);
         header("Location: /contact.html");
         die();
     } else {
-        echo "Failed to send message.";
-        sleep(3);
         header("Location: /contact.html");
     }
 }
