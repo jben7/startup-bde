@@ -1,0 +1,7 @@
+@media print {
+  nav,
+  .navbar-menu,
+  footer {
+    display: none;
+  }
+}
