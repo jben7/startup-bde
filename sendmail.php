@@ -13,14 +13,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $headers = "";
 
     $monMail = mail($to, $subject, $body, $headers);
-    if ($monMail == 1) {
-        echo "Message sent successfully!";
-        sleep(3);
-        header("Location: /contact.html");
-        die();
-    } else {
-        echo "Failed to send message.";
-        sleep(3);
-        header("Location: /contact.html");
-    }
+    echo $monMail;
+    // if ($monMail == 1) {
+    //     echo "Message sent successfully!";
+    //     sleep(3);
+    //     header("Location: /contact.html");
+    //     die();
+    // } else {
+    //     echo "Failed to send message.";
+    //     sleep(3);
+    //     header("Location: /contact.html");
+    // }
 }
