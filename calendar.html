@@ -18,7 +18,7 @@
     <script src="main.js" defer></script>
     <title>Calendrier</title>
   </head>
-  <body class="bg-[#180537] font-montserrat cursor-default">
+  <body class="bg-[#180537] font-montserrat cursor-default bg-[url('/svg/mobilecalendrier.svg')] md:bg-[url('/svg/calendrier.svg')] bg-cover">
     <div
       id="separator_header_content_footer"
       class="flex flex-col overflow-hidden"
@@ -352,7 +352,7 @@
       </div>
       <!-- Fin header -->
 
-      <main class="pt-24 flex flex-col text-white justify-around lg:px-[10rem] gap-[12px] py-[65px]">
+      <main class="pt-24 flex flex-col text-white justify-around lg:px-[10rem] gap-[12px] py-[65px] pb-64">
         <h2>Calendrier</h2>
         <div class="rounded-[20px] backdrop-blur-[10px] bg-[#FFFCEF]/20 border-solid border-2 border-[#AEAEAE] h-full w-full">
           <iframe
