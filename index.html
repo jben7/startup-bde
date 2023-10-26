@@ -18,7 +18,9 @@
     <script src="main.js" defer></script>
     <title>Accueil</title>
   </head>
-  <body class="bg-[#180537] font-montserrat cursor-default bg-[url('/svg/mobilehome.svg')] md:bg-[url('/svg/home.svg')] bg-cover">
+  <body
+    class="bg-[#180537] font-montserrat cursor-default bg-[url('/svg/mobilehome.svg')] md:bg-[url('/svg/home.svg')] bg-cover"
+  >
     <div
       id="separator_header_content_footer"
       class="flex flex-col overflow-hidden"
@@ -92,9 +94,10 @@
           </li>
         </ul>
 
-        <div class="hidden lg:block pr-5 w-52 relative">
-          <a href="/joining.html" class="">
-            <img src="/img/ctabutton.png" class="" alt="Adhésion" />
+        <div class="hidden lg:block pr-5 pb-10 w-52 scale-90">
+          <a href="/joining.html" class="group">
+            <img src="/img/ctabutton.png" class="z-20 absolute" alt="Adhésion" />
+            <img src="/img/ctabutton.png" class="transition transform duration-300 group-hover:scale-110 scale-75 z-10 absolute blur-lg" alt="Adhésion" />
           </a>
         </div>
       </nav>
@@ -301,7 +304,6 @@
           </div>
           <div class="mt-auto w-full flex justify-center">
             <a href="/joining.html" class="w-60">
-              <img src="/img/ctabutton.png" class="" alt="Adhésion" />
             </a>
           </div>
           <div class="mt-auto text-white font-semibold flex flex-col gap-y-6">
@@ -397,119 +399,75 @@
       <!-- Fin header -->
 
       <main class="pt-24 flex flex-col text-white justify-around">
-        <div
-          id="main_content"
-          class="pt-4 flex flex-col lg:flex-row justify-around sm:items-center sm:justify-around gap-6"
-        >
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-16 md:p-16 py-8">
           <div
-            id="team"
-            class="bg-amber-50 bg-opacity-20 rounded-3xl border-2 border-zinc-400 backdrop-blur-lg h-full"
+            class="p-[17px] rounded-3xl bg-[#fffcef]/20 border-2 border-[#aeaeae]/30 backdrop-blur-[10px] min-h-[50px]"
           >
             <img
-              src="img/gauthier/Principal.webp"
-              class="rounded-[44px] p-4"
-              alt="Equipe BDE G4"
+              class="w-full h-full object-cover rounded-2xl"
+              src="/img/gauthier/Principal.webp"
+              alt="Fiesta"
             />
           </div>
-          <div id="next_events" class="">
-            <h2 class="text-2xl">Prochains events</h2>
-            <div class="flex flex-col md:flex-row items-center lg:items-start lg:space-x-4 space-x-0  lg:space-y-0">
+          <div class="min-h-[50px]">
+            <h2 class="pb-2 font-bold text-3xl">Prochains events</h2>
+            <div class="flex flex-col md:flex-row gap-5 h-[calc(100%-44px)]">
               <div
-                class="w-72 h-[22rem] bg-amber-50 bg-opacity-20 rounded-xl border-2 border-zinc-400 backdrop-blur-lg"
+                class="flex flex-col gap-3 p-[17px] rounded-3xl bg-[#fffcef]/20 border-2 border-[#aeaeae]/30 backdrop-blur-[10px]"
               >
-                <img
-                  src="/img/soiree.png"
-                  class="w-64 h-36 m-auto my-2 rounded-lg"
-                />
-                <div
-                  class="w-72 h-44 p-4 flex-col justify-start items-start gap-4"
+                <img src="/img/soiree.png" alt="Event 1" />
+                <h3 class="font-bold text-xl">Soirée intégration</h3>
+                <p class="text-justify">
+                  Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem
+                  ipsum dolor sit amet,
+                </p>
+                <a class="text-violet-100" href="/homenew.html"
+                  >En savoir plus</a
                 >
-                  <div class="w-64 justify-start items-start gap-2">
-                    <h3 class="text-stone-50 text-2xl">Soirée intégration</h3>
-                  </div>
-                  <div
-                    class="self-stretch h-24 flex-col justify-start items-start flex"
-                  >
-                    <div class="pr-4 pb-1.5 justify-start items-center">
-                      <div class="text-stone-50 text-base overflow-clip">
-                        Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,
-                        consectetur adipisicing elit.
-                      </div>
-                    </div>
-                    <div class="justify-start items-start gap-2">
-                      <div class="w-96 text-sm leading-tight tracking-tight">
-                        En savoir plus
-                      </div>
-                    </div>
-                  </div>
-                </div>
               </div>
               <div
-                class="w-72 h-[22rem] bg-amber-50 bg-opacity-20 rounded-xl border-2 border-zinc-400 backdrop-blur-lg"
+                class="flex flex-col gap-3 p-[17px] rounded-3xl bg-[#fffcef]/20 border-2 border-[#aeaeae]/30 backdrop-blur-[10px]"
               >
-                <img
-                  src="/img/soiree.png"
-                  class="w-64 h-36 m-auto my-2 rounded-lg"
-                />
-                <div
-                  class="w-72 h-44 px-4 flex-col justify-start items-start gap-4"
+                <img src="/img/soiree.png" alt="Event 2" />
+                <h3 class="font-bold text-xl">Sortie ski</h3>
+                <p class="text-justify">
+                  Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem
+                  ipsum dolor sit amet,
+                </p>
+                <a class="text-violet-100" href="/homenew.html"
+                  >En savoir plus</a
                 >
-                  <div class="w-64 justify-start items-start gap-2">
-                    <div
-                      class="text-stone-50 text-2xl leading-loose tracking-wide"
-                    >
-                      Sortie ski
-                    </div>
-                  </div>
-                  <div
-                    class="self-stretch h-24 flex-col justify-start items-start flex"
-                  >
-                    <div class="pr-4 pb-1.5 justify-start items-center">
-                      <div class="text-stone-50 text-base overflow-clip">
-                        Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,
-                        consectetur adipisicing elit.
-                      </div>
-                    </div>
-                    <div class="justify-start items-start gap-2">
-                      <div class="w-96 text-sm leading-tight tracking-tight">
-                        En savoir plus
-                      </div>
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div
-          id="carousel"
-          class="py-6 flex flex-col md:flex-row justify-between gap-7 items-center w-full"
-        >
-          <div
-            class="max-h-fit rounded-[27px] bg-[#FFFCEF]/20 border-solid border-2 border-[#AEAEAE]"
-          >
-            <img
-              class="rounded-[44px] p-2"
-              src="/img/gauthier/Karting.webp"
-              alt="Image carousel 1"
-            />
+
+          <div class="flex flex-col md:flex-row min-h-[50px] w-full gap-5">
+            <div
+              class="md:w-1/2 h-full float-left p-[17px] rounded-3xl bg-[#fffcef]/20 border-2 border-[#aeaeae]/30 backdrop-blur-[10px]"
+            >
+              <img
+                class="w-full h-full object-cover rounded-2xl"
+                src="/img/gauthier/Karting.webp"
+                alt="Karting"
+              />
+            </div>
+            <div
+              class="md:w-1/2 h-full float-left p-[17px] rounded-3xl bg-[#fffcef]/20 border-2 border-[#aeaeae]/30 backdrop-blur-[10px]"
+            >
+              <img
+                class="w-full h-full object-cover rounded-2xl"
+                src="/img/gauthier/Travail.webp"
+                alt="Travail"
+              />
+            </div>
           </div>
           <div
-            class="max-h-fit rounded-[27px] bg-[#FFFCEF]/20 border-solid border-2 border-[#AEAEAE]"
+            class="p-[17px] rounded-3xl bg-[#fffcef]/20 border-2 border-[#aeaeae]/30 backdrop-blur-[10px] min-h-[50px] w-full"
           >
             <img
-              class="rounded-[34px] p-2"
-              src="/img/gauthier/Travail.webp"
-              alt="Image carousel 2"
-            />
-          </div>
-          <div
-            class="max-h-fit rounded-[27px] bg-[#FFFCEF]/20 border-solid border-2 border-[#AEAEAE]"
-          >
-            <img
-              class="rounded-[34px] p-2"
+              class="w-full h-full object-cover rounded-2xl"
               src="/img/gauthier/Fete.webp"
-              alt="Image carousel 3"
+              alt="Fete"
             />
           </div>
         </div>
